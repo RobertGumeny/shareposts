@@ -5,7 +5,7 @@
 
     public function index(){
       $data = [
-        'title' => 'GumenyMVC',
+        'title' => 'SharePosts',
       ];
       $this->view('pages/index', $data);
     }
