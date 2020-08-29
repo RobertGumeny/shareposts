@@ -4,6 +4,10 @@
     }
 
     public function index(){
+      if(isLoggedIn()){
+        redirect('posts');
+      }
+
       $data = [
         'title' => 'SharePosts',
         'description' => 'Welcome to SharePosts. A simple social network built on the GumenyMVC PHP Framework.'
